@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace SistemadeControlPoliciaco
 {
-    public class conexion
+    public class Conexion
     {
         public static SqlConnection conectar()
         {
