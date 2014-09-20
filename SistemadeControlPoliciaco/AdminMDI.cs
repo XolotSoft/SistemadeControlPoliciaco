@@ -16,5 +16,10 @@ namespace SistemadeControlPoliciaco
         {
             InitializeComponent();
         }
+
+        private void AdminMDI_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

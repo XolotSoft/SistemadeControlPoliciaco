@@ -64,6 +64,7 @@
             this.txbUser.Name = "txbUser";
             this.txbUser.Size = new System.Drawing.Size(147, 20);
             this.txbUser.TabIndex = 10;
+            this.txbUser.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbUser_KeyPress);
             // 
             // lblPass
             // 
@@ -100,6 +101,7 @@
             this.txbPass.PasswordChar = '*';
             this.txbPass.Size = new System.Drawing.Size(147, 20);
             this.txbPass.TabIndex = 11;
+            this.txbPass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbPass_KeyPress);
             // 
             // pictureBox3
             // 
@@ -142,6 +144,7 @@
             this.btnSalir.TabIndex = 17;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnEntrar
             // 
@@ -152,6 +155,7 @@
             this.btnEntrar.TabIndex = 16;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = true;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // Login
             // 
