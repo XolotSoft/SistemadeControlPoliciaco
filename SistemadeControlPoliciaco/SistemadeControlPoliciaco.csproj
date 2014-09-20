@@ -89,6 +89,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -111,6 +112,13 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>bdSCP.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\loginbg1.png" />
+    <None Include="Resources\loginbg.png" />
+    <None Include="Resources\1401839576_lock-unlock_blue.png" />
+    <None Include="Resources\1401839390_user_blue.png" />
+    <None Include="Resources\key.png" />
+    <None Include="Resources\Dependencia061113.png" />
+    <None Include="Resources\logoSEGOB_hoz.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">

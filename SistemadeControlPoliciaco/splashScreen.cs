@@ -31,19 +31,19 @@ namespace SistemadeControlPoliciaco
                 switch (pgbCargando.Value)
                 {
                     case 2:
-                        lblMensaje.Text = "Tomando el sol en la playa...";
+                        lblMensaje.Text = "Iniciando sistema...";
                         break;
                     case 20:
-                        lblMensaje.Text = "Regando plantas del patio...";
+                        lblMensaje.Text = "Cargando fuentes...";
                         break;
                     case 40:
-                        lblMensaje.Text = "Cosechando frutos ya maduros...";
+                        lblMensaje.Text = "Cargando formularios...";
                         break;
                     case 60:
-                        lblMensaje.Text = "Buscando una chica a lo lejos...";
+                        lblMensaje.Text = "Conectando a base de datos...";
                         break;
                     case 80:
-                        lblMensaje.Text = "Terminando de decir tonterias...";
+                        lblMensaje.Text = "Finalizando la carga del sistema...";
                         break;
                     case 100:
                         tiempo.Enabled = false;
@@ -53,6 +53,11 @@ namespace SistemadeControlPoliciaco
                         break;
                 }
             }      
+        }
+
+        private void SplashScreen_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
