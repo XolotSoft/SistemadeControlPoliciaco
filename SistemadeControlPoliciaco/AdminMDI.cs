@@ -30,16 +30,7 @@ namespace SistemadeControlPoliciaco
             reg.Show();
         }
 
-        private void calculadoraToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
-        {    
-
-        }
-
+ 
         private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
