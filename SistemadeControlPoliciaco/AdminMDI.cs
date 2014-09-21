@@ -21,5 +21,23 @@ namespace SistemadeControlPoliciaco
         {
             Application.Exit();
         }
+
+        private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void calculadoraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            
+            
+
+        }
     }
 }

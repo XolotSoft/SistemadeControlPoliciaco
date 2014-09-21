@@ -52,6 +52,8 @@ namespace SistemadeControlPoliciaco
                     if (user == userR && pass == passR && tipo == "Empleado")
                     {
                         this.Hide();
+                        Registro mediA = new Registro();
+                        mediA.Show();
                     }
                 }
                 else
