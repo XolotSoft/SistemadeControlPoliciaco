@@ -60,7 +60,6 @@
             this.label1.Size = new System.Drawing.Size(120, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Apellido Paterno:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -72,7 +71,6 @@
             this.label2.Size = new System.Drawing.Size(123, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "Apellido Materno:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -95,7 +93,6 @@
             this.label4.Size = new System.Drawing.Size(152, 17);
             this.label4.TabIndex = 3;
             this.label4.Text = "Fecha de Nacimiento:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -196,7 +193,6 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(125, 23);
             this.textBox4.TabIndex = 16;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox5
             // 
@@ -224,7 +220,6 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(41, 23);
             this.textBox7.TabIndex = 19;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // button1
             // 

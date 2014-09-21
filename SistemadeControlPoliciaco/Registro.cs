@@ -16,30 +16,16 @@ namespace SistemadeControlPoliciaco
         {
             InitializeComponent();
         }
+        private static Registro frmInst = null;
 
-        private void label1_Click(object sender, EventArgs e)
+        public static Registro Instancia()
         {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-
+            if (((frmInst == null) || (frmInst.IsDisposed == true)))
+            {
+                frmInst = new Registro();
+            }
+            frmInst.BringToFront();
+            return frmInst;
         }
     }
 }

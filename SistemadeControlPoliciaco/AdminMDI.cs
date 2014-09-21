@@ -24,7 +24,10 @@ namespace SistemadeControlPoliciaco
 
         private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            Registro reg = null;
+            reg = Registro.Instancia();
+            reg.MdiParent = this;
+            reg.Show();
         }
 
         private void calculadoraToolStripMenuItem_Click(object sender, EventArgs e)
@@ -33,11 +36,20 @@ namespace SistemadeControlPoliciaco
         }
 
         private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-            
-            
+        {    
 
+        }
+
+        private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login lg = new Login();
+            lg.Show();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
