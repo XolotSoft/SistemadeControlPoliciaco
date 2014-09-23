@@ -16,5 +16,16 @@ namespace SistemadeControlPoliciaco
         {
             InitializeComponent();
         }
+        private static Domicilio frmInst = null;
+
+        public static Domicilio Instancia()
+        {
+            if (((frmInst == null) || (frmInst.IsDisposed == true)))
+            {
+                frmInst = new Domicilio();
+            }
+            frmInst.BringToFront();
+            return frmInst;
+        }
     }
 }

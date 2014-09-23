@@ -16,5 +16,16 @@ namespace SistemadeControlPoliciaco
         {
             InitializeComponent();
         }
+        private static Escaneo frmInst = null;
+
+        public static Escaneo Instancia()
+        {
+            if (((frmInst == null) || (frmInst.IsDisposed == true)))
+            {
+                frmInst = new Escaneo();
+            }
+            frmInst.BringToFront();
+            return frmInst;
+        }
     }
 }

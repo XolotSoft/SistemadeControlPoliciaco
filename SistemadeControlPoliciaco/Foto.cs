@@ -16,5 +16,16 @@ namespace SistemadeControlPoliciaco
         {
             InitializeComponent();
         }
+        private static Foto frmInst = null;
+
+        public static Foto Instancia()
+        {
+            if (((frmInst == null) || (frmInst.IsDisposed == true)))
+            {
+                frmInst = new Foto();
+            }
+            frmInst.BringToFront();
+            return frmInst;
+        }
     }
 }
