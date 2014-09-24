@@ -27,5 +27,10 @@ namespace SistemadeControlPoliciaco
             frmInst.BringToFront();
             return frmInst;
         }
+
+        private void Foto_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
