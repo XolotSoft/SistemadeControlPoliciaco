@@ -114,6 +114,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Clases\Vacio.cs" />
     <Compile Include="Clases\Validar.cs" />
+    <Compile Include="Clases\Variables.cs" />
     <EmbeddedResource Include="AdminMDI.resx">
       <DependentUpon>AdminMDI.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,6 +170,25 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>bdSCP.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\huella1.jpg" />
+    <None Include="Resources\logomdi.png" />
+    <None Include="Resources\policia.jpg" />
+    <None Include="Resources\captura.png" />
+    <None Include="Resources\webcam.png" />
+    <None Include="Resources\deleteDates.png" />
+    <None Include="Resources\Camara.png" />
+    <None Include="Resources\1401844351_plus-24.png" />
+    <None Include="Resources\1401844351_menos-24.png" />
+    <None Include="Resources\1401844327_checkmark-24.png" />
+    <None Include="Resources\1401843226_maximize.png" />
+    <None Include="Resources\1401843024_refresh1.png" />
+    <None Include="Resources\1401843024_refresh.png" />
+    <None Include="Resources\1401842826_cross-24.png" />
+    <None Include="Resources\Domicilio.png" />
+    <None Include="Resources\contacto.png" />
+    <None Include="Resources\Escaneo.png" />
+    <None Include="Resources\fotografia.png" />
+    <None Include="Resources\Datosper.png" />
     <None Include="Resources\flecha.png" />
     <None Include="Resources\loginbg1.png" />
     <None Include="Resources\loginbg.png" />

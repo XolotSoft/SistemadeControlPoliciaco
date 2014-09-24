@@ -16,6 +16,17 @@ namespace SistemadeControlPoliciaco
         {
             InitializeComponent();
         }
+        private static Contacto frmInst = null;
+
+        public static Contacto Instancia()
+        {
+            if (((frmInst == null) || (frmInst.IsDisposed == true)))
+            {
+                frmInst = new Contacto();
+            }
+            frmInst.BringToFront();
+            return frmInst;
+        }
 
         private void Contacto_Load(object sender, EventArgs e)
         {
@@ -48,6 +59,11 @@ namespace SistemadeControlPoliciaco
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }
