@@ -38,10 +38,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(67, 309);
+            this.button1.Location = new System.Drawing.Point(321, 375);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 30);
+            this.button1.Size = new System.Drawing.Size(110, 35);
             this.button1.TabIndex = 0;
             this.button1.Text = "Escanear";
             this.button1.UseVisualStyleBackColor = true;
@@ -50,10 +50,10 @@
             // 
             this.button2.Image = global::SistemadeControlPoliciaco.Properties.Resources.deleteDates;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(67, 356);
+            this.button2.Location = new System.Drawing.Point(321, 422);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 30);
+            this.button2.Size = new System.Drawing.Size(110, 35);
             this.button2.TabIndex = 1;
             this.button2.Text = "Repetir";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -73,10 +73,10 @@
             // 
             this.button3.Image = global::SistemadeControlPoliciaco.Properties.Resources._1401844327_checkmark_24;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(288, 309);
+            this.button3.Location = new System.Drawing.Point(647, 375);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 30);
+            this.button3.Size = new System.Drawing.Size(110, 35);
             this.button3.TabIndex = 3;
             this.button3.Text = "Siguiente";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -86,10 +86,10 @@
             // 
             this.button4.Image = global::SistemadeControlPoliciaco.Properties.Resources._1401843024_refresh1;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(288, 356);
+            this.button4.Location = new System.Drawing.Point(647, 432);
             this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(100, 30);
+            this.button4.Size = new System.Drawing.Size(110, 35);
             this.button4.TabIndex = 4;
             this.button4.Text = "Atras";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
