@@ -293,6 +293,16 @@ namespace SistemadeControlPoliciaco.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap policia {
+            get {
+                object obj = ResourceManager.GetObject("policia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap webcam {
             get {
                 object obj = ResourceManager.GetObject("webcam", resourceCulture);
