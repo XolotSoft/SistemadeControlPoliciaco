@@ -293,6 +293,16 @@ namespace SistemadeControlPoliciaco.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logomdi {
+            get {
+                object obj = ResourceManager.GetObject("logomdi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logoSEGOB_hoz {
             get {
                 object obj = ResourceManager.GetObject("logoSEGOB_hoz", resourceCulture);

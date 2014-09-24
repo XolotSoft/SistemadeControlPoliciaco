@@ -42,7 +42,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(418, 363);
+            this.button1.Location = new System.Drawing.Point(363, 227);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 35);
@@ -54,7 +54,7 @@
             // 
             this.button2.Image = global::SistemadeControlPoliciaco.Properties.Resources.deleteDates;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(418, 420);
+            this.button2.Location = new System.Drawing.Point(363, 330);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(110, 35);
@@ -66,7 +66,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(539, 305);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(573, 339);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 17);
@@ -77,7 +78,7 @@
             // 
             this.button3.Image = global::SistemadeControlPoliciaco.Properties.Resources._1401844327_checkmark_24;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(640, 363);
+            this.button3.Location = new System.Drawing.Point(651, 425);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(110, 35);
@@ -90,7 +91,7 @@
             // 
             this.button4.Image = global::SistemadeControlPoliciaco.Properties.Resources._1401843024_refresh1;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(640, 420);
+            this.button4.Location = new System.Drawing.Point(499, 425);
             this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(110, 35);
@@ -112,7 +113,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::SistemadeControlPoliciaco.Properties.Resources.huella;
-            this.pictureBox2.Location = new System.Drawing.Point(529, 125);
+            this.pictureBox2.Location = new System.Drawing.Point(565, 170);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(104, 137);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
