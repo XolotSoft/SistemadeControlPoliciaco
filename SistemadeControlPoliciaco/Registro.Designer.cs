@@ -101,7 +101,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(399, 154);
+            this.label5.Location = new System.Drawing.Point(399, 213);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(135, 17);
             this.label5.TabIndex = 4;
@@ -112,7 +112,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(493, 214);
+            this.label6.Location = new System.Drawing.Point(493, 153);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 17);
             this.label6.TabIndex = 5;
@@ -148,6 +148,7 @@
             this.txbApePat.Name = "txbApePat";
             this.txbApePat.Size = new System.Drawing.Size(170, 23);
             this.txbApePat.TabIndex = 8;
+            this.txbApePat.Leave += new System.EventHandler(this.txbApePat_Leave);
             // 
             // txbApeMat
             // 
@@ -157,6 +158,7 @@
             this.txbApeMat.Name = "txbApeMat";
             this.txbApeMat.Size = new System.Drawing.Size(170, 23);
             this.txbApeMat.TabIndex = 9;
+            this.txbApeMat.Leave += new System.EventHandler(this.txbApeMat_Leave);
             // 
             // txbNom
             // 
@@ -166,26 +168,32 @@
             this.txbNom.Name = "txbNom";
             this.txbNom.Size = new System.Drawing.Size(170, 23);
             this.txbNom.TabIndex = 10;
+            this.txbNom.Leave += new System.EventHandler(this.txbNom_Leave);
             // 
             // cbxEntFed
             // 
             this.cbxEntFed.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxEntFed.FormattingEnabled = true;
-            this.cbxEntFed.Location = new System.Drawing.Point(540, 152);
+            this.cbxEntFed.Location = new System.Drawing.Point(540, 210);
             this.cbxEntFed.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbxEntFed.Name = "cbxEntFed";
             this.cbxEntFed.Size = new System.Drawing.Size(170, 25);
-            this.cbxEntFed.TabIndex = 12;
+            this.cbxEntFed.TabIndex = 13;
             // 
             // cbxSex
             // 
             this.cbxSex.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxSex.FormattingEnabled = true;
-            this.cbxSex.Location = new System.Drawing.Point(540, 212);
+            this.cbxSex.Items.AddRange(new object[] {
+            "",
+            "Hombre",
+            "Mujer"});
+            this.cbxSex.Location = new System.Drawing.Point(540, 150);
             this.cbxSex.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbxSex.Name = "cbxSex";
             this.cbxSex.Size = new System.Drawing.Size(170, 25);
-            this.cbxSex.TabIndex = 13;
+            this.cbxSex.TabIndex = 12;
+            this.cbxSex.Leave += new System.EventHandler(this.cbxSex_Leave);
             // 
             // txbCurAut
             // 
@@ -236,6 +244,7 @@
             this.dtpFecNac.Size = new System.Drawing.Size(170, 23);
             this.dtpFecNac.TabIndex = 11;
             this.dtpFecNac.Value = new System.DateTime(2014, 9, 23, 0, 0, 0, 0);
+            this.dtpFecNac.Leave += new System.EventHandler(this.dtpFecNac_Leave);
             // 
             // btnLim
             // 

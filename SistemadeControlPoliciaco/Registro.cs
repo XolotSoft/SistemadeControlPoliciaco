@@ -15,8 +15,18 @@ namespace SistemadeControlPoliciaco
         public Registro()
         {
             InitializeComponent();
+            
+            
         }
         private static Registro frmInst = null;
+        string aPat = "";
+        string aMat = "";
+        string nAsp = "";
+        string fNac = "";
+        string eFed = "";
+        string sAsp = "";
+        string cAsp = "";
+        string rAsp = "";
 
         public static Registro Instancia()
         {
@@ -54,6 +64,42 @@ namespace SistemadeControlPoliciaco
             dom = Domicilio.Instancia();
             dom.MdiParent = AdminMDI.ActiveForm;
             dom.Show();
+        }
+
+        private void txbApePat_Leave(object sender, EventArgs e)
+        {
+            aPat = txbApePat.Text.Substring(0, 2).ToUpper();
+            txbRfcAut.Text = aPat+aMat+nAsp+fNac;
+            txbCurAut.Text = aPat + aMat + nAsp + fNac + sAsp;
+        }
+
+        private void txbApeMat_Leave(object sender, EventArgs e)
+        {
+            aMat = txbApeMat.Text.Substring(0, 1).ToUpper();
+            txbRfcAut.Text = aPat + aMat + nAsp + fNac;
+            txbCurAut.Text = aPat + aMat + nAsp + fNac + sAsp;
+        }
+
+        private void txbNom_Leave(object sender, EventArgs e)
+        {
+            nAsp = txbNom.Text.Substring(0, 1).ToUpper();
+            txbRfcAut.Text = aPat + aMat + nAsp + fNac;
+            txbCurAut.Text = aPat + aMat + nAsp + fNac + sAsp;
+        }
+
+        private void dtpFecNac_Leave(object sender, EventArgs e)
+        {
+            dtpFecNac.Format = DateTimePickerFormat.Custom;
+            dtpFecNac.CustomFormat = "yyMMdd";
+            fNac = dtpFecNac.Text;
+            txbRfcAut.Text = aPat + aMat + nAsp + fNac;
+            txbCurAut.Text = aPat + aMat + nAsp + fNac + sAsp;
+        }
+
+        private void cbxSex_Leave(object sender, EventArgs e)
+        {
+            sAsp = cbxSex.Text.Substring(0, 1).ToUpper();
+            txbCurAut.Text = aPat + aMat + nAsp + fNac + sAsp;
         }
     }
 }
