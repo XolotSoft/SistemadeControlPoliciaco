@@ -58,7 +58,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(588, 315);
+            this.label1.Location = new System.Drawing.Point(589, 315);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(37, 17);
@@ -131,9 +131,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::SistemadeControlPoliciaco.Properties.Resources.policia;
-            this.pictureBox2.Location = new System.Drawing.Point(497, 144);
+            this.pictureBox2.Location = new System.Drawing.Point(509, 140);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(193, 138);
+            this.pictureBox2.Size = new System.Drawing.Size(193, 143);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
