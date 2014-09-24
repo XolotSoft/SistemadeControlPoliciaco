@@ -170,6 +170,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>bdSCP.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\logomdi.png" />
     <None Include="Resources\policia.jpg" />
     <None Include="Resources\captura.png" />
     <None Include="Resources\webcam.png" />
