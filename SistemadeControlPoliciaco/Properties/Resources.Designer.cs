@@ -153,6 +153,26 @@ namespace SistemadeControlPoliciaco.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Camara {
+            get {
+                object obj = ResourceManager.GetObject("Camara", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap captura {
+            get {
+                object obj = ResourceManager.GetObject("captura", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap contacto {
             get {
                 object obj = ResourceManager.GetObject("contacto", resourceCulture);
@@ -166,6 +186,16 @@ namespace SistemadeControlPoliciaco.Properties {
         internal static System.Drawing.Bitmap Datosper {
             get {
                 object obj = ResourceManager.GetObject("Datosper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap deleteDates {
+            get {
+                object obj = ResourceManager.GetObject("deleteDates", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -256,6 +286,16 @@ namespace SistemadeControlPoliciaco.Properties {
         internal static System.Drawing.Bitmap logoSEGOB_hoz {
             get {
                 object obj = ResourceManager.GetObject("logoSEGOB_hoz", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap webcam {
+            get {
+                object obj = ResourceManager.GetObject("webcam", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
