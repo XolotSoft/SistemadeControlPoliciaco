@@ -169,6 +169,13 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>bdSCP.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\1401844351_plus-24.png" />
+    <None Include="Resources\1401844351_menos-24.png" />
+    <None Include="Resources\1401844327_checkmark-24.png" />
+    <None Include="Resources\1401843226_maximize.png" />
+    <None Include="Resources\1401843024_refresh1.png" />
+    <None Include="Resources\1401843024_refresh.png" />
+    <None Include="Resources\1401842826_cross-24.png" />
     <None Include="Resources\Domicilio.png" />
     <None Include="Resources\contacto.png" />
     <None Include="Resources\Escaneo.png" />
