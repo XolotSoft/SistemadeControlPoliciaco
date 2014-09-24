@@ -45,7 +45,7 @@
             // 
             this.button1.Image = global::SistemadeControlPoliciaco.Properties.Resources.webcam;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(28, 405);
+            this.button1.Location = new System.Drawing.Point(131, 452);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(134, 35);
@@ -58,7 +58,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(616, 314);
+            this.label1.Location = new System.Drawing.Point(588, 315);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(37, 17);
@@ -70,7 +70,7 @@
             // 
             this.button2.Image = global::SistemadeControlPoliciaco.Properties.Resources.Camara;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(301, 375);
+            this.button2.Location = new System.Drawing.Point(460, 375);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(110, 35);
@@ -83,7 +83,7 @@
             // 
             this.button3.Image = global::SistemadeControlPoliciaco.Properties.Resources.deleteDates;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(301, 429);
+            this.button3.Location = new System.Drawing.Point(460, 429);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(110, 35);
@@ -123,7 +123,7 @@
             this.pictureBox1.Image = global::SistemadeControlPoliciaco.Properties.Resources.policia;
             this.pictureBox1.Location = new System.Drawing.Point(28, 110);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(383, 241);
+            this.pictureBox1.Size = new System.Drawing.Size(383, 321);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
@@ -131,7 +131,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::SistemadeControlPoliciaco.Properties.Resources.policia;
-            this.pictureBox2.Location = new System.Drawing.Point(525, 143);
+            this.pictureBox2.Location = new System.Drawing.Point(497, 144);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(193, 138);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
