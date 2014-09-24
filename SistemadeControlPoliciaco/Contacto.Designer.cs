@@ -107,7 +107,7 @@
             this.textBox3.Location = new System.Drawing.Point(241, 243);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(232, 23);
+            this.textBox3.Size = new System.Drawing.Size(237, 23);
             this.textBox3.TabIndex = 5;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
