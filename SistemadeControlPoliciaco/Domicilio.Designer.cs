@@ -36,8 +36,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbxEntFed = new System.Windows.Forms.ComboBox();
+            this.cbxDelMun = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -136,23 +136,28 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Número Interior:";
             // 
-            // comboBox1
+            // cbxEntFed
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(200, 152);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(170, 25);
-            this.comboBox1.TabIndex = 7;
+            this.cbxEntFed.FormattingEnabled = true;
+            this.cbxEntFed.Items.AddRange(new object[] {
+            "",
+            "Estado de México",
+            "Distrito Federal"});
+            this.cbxEntFed.Location = new System.Drawing.Point(200, 152);
+            this.cbxEntFed.Margin = new System.Windows.Forms.Padding(4);
+            this.cbxEntFed.Name = "cbxEntFed";
+            this.cbxEntFed.Size = new System.Drawing.Size(170, 25);
+            this.cbxEntFed.TabIndex = 7;
+            this.cbxEntFed.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // comboBox2
+            // cbxDelMun
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(200, 212);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(170, 25);
-            this.comboBox2.TabIndex = 8;
+            this.cbxDelMun.FormattingEnabled = true;
+            this.cbxDelMun.Location = new System.Drawing.Point(200, 212);
+            this.cbxDelMun.Margin = new System.Windows.Forms.Padding(4);
+            this.cbxDelMun.Name = "cbxDelMun";
+            this.cbxDelMun.Size = new System.Drawing.Size(170, 25);
+            this.cbxDelMun.TabIndex = 8;
             // 
             // textBox1
             // 
@@ -249,8 +254,8 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbxDelMun);
+            this.Controls.Add(this.cbxEntFed);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -279,8 +284,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbxEntFed;
+        private System.Windows.Forms.ComboBox cbxDelMun;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;

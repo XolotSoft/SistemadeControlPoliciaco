@@ -179,6 +179,7 @@
             this.cbxEntFed.Name = "cbxEntFed";
             this.cbxEntFed.Size = new System.Drawing.Size(170, 25);
             this.cbxEntFed.TabIndex = 13;
+            this.cbxEntFed.Leave += new System.EventHandler(this.cbxEntFed_Leave);
             // 
             // cbxSex
             // 
@@ -202,16 +203,16 @@
             this.txbCurAut.Location = new System.Drawing.Point(540, 272);
             this.txbCurAut.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txbCurAut.Name = "txbCurAut";
-            this.txbCurAut.Size = new System.Drawing.Size(125, 23);
+            this.txbCurAut.Size = new System.Drawing.Size(131, 23);
             this.txbCurAut.TabIndex = 16;
             // 
             // txbCurHom
             // 
             this.txbCurHom.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbCurHom.Location = new System.Drawing.Point(671, 272);
+            this.txbCurHom.Location = new System.Drawing.Point(677, 272);
             this.txbCurHom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txbCurHom.Name = "txbCurHom";
-            this.txbCurHom.Size = new System.Drawing.Size(41, 23);
+            this.txbCurHom.Size = new System.Drawing.Size(35, 23);
             this.txbCurHom.TabIndex = 14;
             // 
             // txbRfcAut
@@ -221,16 +222,16 @@
             this.txbRfcAut.Location = new System.Drawing.Point(540, 332);
             this.txbRfcAut.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txbRfcAut.Name = "txbRfcAut";
-            this.txbRfcAut.Size = new System.Drawing.Size(125, 23);
+            this.txbRfcAut.Size = new System.Drawing.Size(130, 23);
             this.txbRfcAut.TabIndex = 18;
             // 
             // txbRfcHom
             // 
             this.txbRfcHom.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbRfcHom.Location = new System.Drawing.Point(671, 332);
+            this.txbRfcHom.Location = new System.Drawing.Point(677, 332);
             this.txbRfcHom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txbRfcHom.Name = "txbRfcHom";
-            this.txbRfcHom.Size = new System.Drawing.Size(41, 23);
+            this.txbRfcHom.Size = new System.Drawing.Size(35, 23);
             this.txbRfcHom.TabIndex = 15;
             // 
             // dtpFecNac
@@ -322,6 +323,7 @@
             this.Name = "Registro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro";
+            this.Load += new System.EventHandler(this.Registro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

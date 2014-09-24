@@ -101,5 +101,21 @@ namespace SistemadeControlPoliciaco
             sAsp = cbxSex.Text.Substring(0, 1).ToUpper();
             txbCurAut.Text = aPat + aMat + nAsp + fNac + sAsp;
         }
+
+        private void Registro_Load(object sender, EventArgs e)
+        {
+            ManejoBD bd = new ManejoBD();
+            bd.buscarg("*","Estados");
+            cbxEntFed.DataSource = bd.ds.Tables[0].DefaultView;
+            cbxEntFed.DisplayMember = "noEstado";
+            cbxEntFed.ValueMember = "clEstado";
+        }
+
+        private void cbxEntFed_Leave(object sender, EventArgs e)
+        {
+            eFed = cbxEntFed.SelectedValue.ToString();
+            txbCurAut.Text = aPat + aMat + nAsp + fNac + sAsp + eFed;
+
+        }
     }
 }

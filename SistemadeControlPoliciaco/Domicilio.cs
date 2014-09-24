@@ -37,5 +37,23 @@ namespace SistemadeControlPoliciaco
         {
             Limpiar.txb(this);
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbxEntFed.SelectedIndex == 1)
+            {
+                ManejoBD bd = new ManejoBD();
+                bd.buscarg("*", "Municipios");
+                cbxDelMun.DataSource = bd.ds.Tables[0].DefaultView;
+                cbxDelMun.DisplayMember = "nomMun";
+            }
+            if (cbxEntFed.SelectedIndex == 2)
+            {
+                ManejoBD bd = new ManejoBD();
+                bd.buscarg("*", "Delegaciones");
+                cbxDelMun.DataSource = bd.ds.Tables[0].DefaultView;
+                cbxDelMun.DisplayMember = "nomDel";
+            }
+        }
     }
 }
