@@ -48,7 +48,7 @@
             // 
             // button2
             // 
-            this.button2.Image = global::SistemadeControlPoliciaco.Properties.Resources._1401843024_refresh;
+            this.button2.Image = global::SistemadeControlPoliciaco.Properties.Resources.deleteDates;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(67, 356);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
@@ -100,7 +100,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SistemadeControlPoliciaco.Properties.Resources.Escaneo;
-            this.ClientSize = new System.Drawing.Size(466, 500);
+            this.ClientSize = new System.Drawing.Size(800, 500);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label1);
