@@ -230,10 +230,12 @@
             this.dtpFechaNac.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFechaNac.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFechaNac.Location = new System.Drawing.Point(200, 332);
+            this.dtpFechaNac.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
+            this.dtpFechaNac.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtpFechaNac.Name = "dtpFechaNac";
             this.dtpFechaNac.Size = new System.Drawing.Size(170, 23);
             this.dtpFechaNac.TabIndex = 11;
-            this.dtpFechaNac.Value = new System.DateTime(2014, 9, 21, 16, 43, 6, 0);
+            this.dtpFechaNac.Value = new System.DateTime(2014, 9, 23, 0, 0, 0, 0);
             // 
             // button1
             // 
@@ -247,6 +249,7 @@
             this.button1.Text = "Limpiar  ";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnCerrar
             // 
@@ -260,6 +263,7 @@
             this.btnCerrar.Text = "Cerrar   ";
             this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btnRegistrar
             // 

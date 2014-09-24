@@ -27,5 +27,15 @@ namespace SistemadeControlPoliciaco
             frmInst.BringToFront();
             return frmInst;
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Limpiar.txb(this);
+        }
     }
 }
