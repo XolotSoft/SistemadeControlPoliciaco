@@ -37,5 +37,23 @@ namespace SistemadeControlPoliciaco
         {
             Limpiar.txb(this);
         }
+
+        private void btnCon_Click(object sender, EventArgs e)
+        {
+            string aPat = txbApePat.Text;
+            string aMat = txbApeMat.Text;
+            string nAsp = txbNom.Text;
+            string fNac = dtpFecNac.Text;
+            string eFed = cbxEntFed.Text;
+            string sAsp = cbxSex.Text;
+            string cAsp = txbCurAut.Text + txbCurHom.Text;
+            string rAsp = txbRfcAut.Text + txbRfcHom.Text;
+            Variables.DatosPersonales(aPat, aMat, nAsp, fNac, eFed, sAsp, cAsp, rAsp);
+            this.Hide();
+            Domicilio dom = null;
+            dom = Domicilio.Instancia();
+            dom.MdiParent = AdminMDI.ActiveForm;
+            dom.Show();
+        }
     }
 }
