@@ -101,6 +101,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::SistemadeControlPoliciaco.Properties.Resources.fotografia;
             this.ClientSize = new System.Drawing.Size(800, 500);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
