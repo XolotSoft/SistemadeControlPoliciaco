@@ -153,6 +153,36 @@ namespace SistemadeControlPoliciaco.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1412453811_67_16 {
+            get {
+                object obj = ResourceManager.GetObject("1412453811_67-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1412453866_search_16 {
+            get {
+                object obj = ResourceManager.GetObject("1412453866_search-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1412453987_new_24_16 {
+            get {
+                object obj = ResourceManager.GetObject("1412453987_new-24-16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Camara {
             get {
                 object obj = ResourceManager.GetObject("Camara", resourceCulture);
@@ -306,6 +336,16 @@ namespace SistemadeControlPoliciaco.Properties {
         internal static System.Drawing.Bitmap logoSEGOB_hoz {
             get {
                 object obj = ResourceManager.GetObject("logoSEGOB_hoz", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap modaspirantes {
+            get {
+                object obj = ResourceManager.GetObject("modaspirantes", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
