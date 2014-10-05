@@ -12,13 +12,13 @@ namespace SistemadeControlPoliciaco
     {
         public static SqlConnection conectar()
         {
-            SqlConnection conectado = new SqlConnection(@"Data Source=(LocalDB)\v11.0;Integrated Security=True;AttachDbFileName= E:\Documentos\Visual Studio 2013\Projects\SistemadeControlPoliciaco\SistemadeControlPoliciaco\bdSCP.mdf");
+            SqlConnection conectado = new SqlConnection(@"Data Source=RV415\SQLEXPRESS;Initial Catalog=policiacoDB;Integrated Security=True");
             conectado.Open();
             return conectado;
         }
         public static SqlConnection desconectar()
         {
-            SqlConnection conectado = new SqlConnection(@"Data Source=(LocalDB)\v11.0;Integrated Security=True;AttachDbFileName= E:\Documentos\Visual Studio 2013\Projects\SistemadeControlPoliciaco\SistemadeControlPoliciaco\bdSCP.mdf");
+            SqlConnection conectado = new SqlConnection(@"Data Source=RV415\SQLEXPRESS;Initial Catalog=policiacoDB;Integrated Security=True");
             conectado.Close();
             return conectado;
         }

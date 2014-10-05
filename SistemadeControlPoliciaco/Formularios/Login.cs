@@ -27,10 +27,10 @@ namespace SistemadeControlPoliciaco
         {
             string userR;
             string passR;
-            string tipo;
+            int tipo;
             string user = txbUser.Text;
             string pass = txbPass.Text;
-            string sql = "SELECT * FROM Usuarios WHERE usuario ='" + user + "' AND pass ='" + pass + "'";
+            string sql = "SELECT * FROM Usuarios WHERE noUsu ='" + user + "' AND pwUsu ='" + pass + "'";
 
             if (Vacio.txb(this))
             {
@@ -40,20 +40,20 @@ namespace SistemadeControlPoliciaco
                     DataRow u = db.dt.Rows[0];
                     userR = Convert.ToString(u[1]);
                     passR = Convert.ToString(u[2]);
-                    tipo = Convert.ToString(u[3]);
+                    tipo = Convert.ToInt16(u[3]);
 
-                    if (user == userR && pass == passR && tipo == "Administrador")
+                    if (user == userR && pass == passR && tipo == 1)
                     {
                         this.Hide();
                         AdminMDI mdiA = new AdminMDI();
                         mdiA.Show();
                     }
 
-                    if (user == userR && pass == passR && tipo == "Empleado")
+                    if (user == userR && pass == passR && tipo == 2)
                     {
                         this.Hide();
-                        Registro mediA = new Registro();
-                        mediA.Show();
+                        UserMDI mdiU = new UserMDI();
+                        mdiU.Show();
                     }
                 }
                 else
