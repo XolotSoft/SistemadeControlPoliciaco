@@ -52,7 +52,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(385, 236);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 17);
+            this.label1.Size = new System.Drawing.Size(84, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Versión 1.0.0";
             // 
@@ -61,7 +61,7 @@
             this.lblMensaje.AutoSize = true;
             this.lblMensaje.Location = new System.Drawing.Point(13, 236);
             this.lblMensaje.Name = "lblMensaje";
-            this.lblMensaje.Size = new System.Drawing.Size(0, 17);
+            this.lblMensaje.Size = new System.Drawing.Size(0, 16);
             this.lblMensaje.TabIndex = 2;
             // 
             // tiempo
@@ -90,7 +90,7 @@
             // 
             // SplashScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 261);
             this.ControlBox = false;
@@ -99,7 +99,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pgbCargando);
             this.Controls.Add(this.pictureBox2);
-            this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);

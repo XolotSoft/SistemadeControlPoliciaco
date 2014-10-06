@@ -16,5 +16,25 @@ namespace SistemadeControlPoliciaco
         {
             InitializeComponent();
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login lg = new Login();
+            lg.Show();
+        }
+
+        private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Registro reg = null;
+            reg = Registro.Instancia();
+            reg.MdiParent = this;
+            reg.Show();
+        }
     }
 }

@@ -105,10 +105,10 @@ namespace SistemadeControlPoliciaco
         private void Registro_Load(object sender, EventArgs e)
         {
             ManejoBD bd = new ManejoBD();
-            bd.buscarg("*","Estados");
+            bd.buscarg("*","estados");
             cbxEntFed.DataSource = bd.ds.Tables[0].DefaultView;
-            cbxEntFed.DisplayMember = "noEstado";
-            cbxEntFed.ValueMember = "clEstado";
+            cbxEntFed.DisplayMember = "noEst";
+            cbxEntFed.ValueMember = "clEst";
         }
 
         private void cbxEntFed_Leave(object sender, EventArgs e)
