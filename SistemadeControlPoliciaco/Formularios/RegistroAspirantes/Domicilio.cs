@@ -43,16 +43,16 @@ namespace SistemadeControlPoliciaco
             if (cbxEntFed.SelectedIndex == 1)
             {
                 ManejoBD bd = new ManejoBD();
-                bd.buscarg("*", "Municipios");
+                bd.buscarg("*", "municipios");
                 cbxDelMun.DataSource = bd.ds.Tables[0].DefaultView;
-                cbxDelMun.DisplayMember = "nomMun";
+                cbxDelMun.DisplayMember = "noMun";
             }
             if (cbxEntFed.SelectedIndex == 2)
             {
                 ManejoBD bd = new ManejoBD();
-                bd.buscarg("*", "Delegaciones");
+                bd.buscarg("*", "delegaciones");
                 cbxDelMun.DataSource = bd.ds.Tables[0].DefaultView;
-                cbxDelMun.DisplayMember = "nomDel";
+                cbxDelMun.DisplayMember = "noDel";
             }
         }
     }

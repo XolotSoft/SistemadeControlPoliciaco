@@ -24,13 +24,10 @@ namespace SistemadeControlPoliciaco
 
         private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Domicilio dom = null;
             Registro reg = null;
-            dom = Domicilio.Instancia();
             reg = Registro.Instancia();
             reg.MdiParent = this;
             reg.Show();
-            dom.Hide();
         }
 
  
