@@ -80,12 +80,6 @@
     <Compile Include="Formularios\RegistroAspirantes\Domicilio.Designer.cs">
       <DependentUpon>Domicilio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\EditarAspirantes\Editar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\EditarAspirantes\Editar.Designer.cs">
-      <DependentUpon>Editar.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\RegistroAspirantes\Escaneo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,9 +129,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\RegistroAspirantes\Domicilio.resx">
       <DependentUpon>Domicilio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\EditarAspirantes\Editar.resx">
-      <DependentUpon>Editar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\RegistroAspirantes\Escaneo.resx">
       <DependentUpon>Escaneo.cs</DependentUpon>
@@ -244,6 +235,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Alpha Dista Icon 31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Formularios\EditarAspirantes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
