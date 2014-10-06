@@ -11,6 +11,7 @@
     <AssemblyName>SistemadeControlPoliciaco</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publicar\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -23,7 +24,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -59,6 +59,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extras\calculadora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extras\calculadora.Designer.cs">
+      <DependentUpon>calculadora.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\MDIs\AdminMDI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,9 @@
     <Compile Include="Formularios\MDIs\UserMDI.Designer.cs">
       <DependentUpon>UserMDI.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Extras\Calculadora.resx">
+      <DependentUpon>calculadora.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\MDIs\AdminMDI.resx">
       <DependentUpon>AdminMDI.cs</DependentUpon>
     </EmbeddedResource>
@@ -216,7 +225,7 @@
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
       <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

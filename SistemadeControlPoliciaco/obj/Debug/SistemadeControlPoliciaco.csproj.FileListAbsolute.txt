@@ -107,3 +107,7 @@ C:\Users\StarKiller\Documents\Visual Studio 2013\Projects\SistemadeControlPolici
 C:\Users\StarKiller\Documents\Visual Studio 2013\Projects\SistemadeControlPoliciaco\SistemadeControlPoliciaco\obj\Debug\SistemadeControlPoliciaco.csproj.GenerateResource.Cache
 C:\Users\StarKiller\Documents\Visual Studio 2013\Projects\SistemadeControlPoliciaco\SistemadeControlPoliciaco\obj\Debug\SistemadeControlPoliciaco.Editar.resources
 C:\Users\StarKiller\Documents\Visual Studio 2013\Projects\SistemadeControlPoliciaco\SistemadeControlPoliciaco\obj\Debug\SistemadeControlPoliciaco.UserMDI.resources
+C:\Users\vicogh\Documents\Visual Studio 2013\Projects\controlpoliciaco\SistemadeControlPoliciaco\bin\Debug\SistemadeControlPoliciaco.exe.config
+C:\Users\vicogh\Documents\Visual Studio 2013\Projects\controlpoliciaco\SistemadeControlPoliciaco\obj\Debug\SistemadeControlPoliciaco.exe
+C:\Users\vicogh\Documents\Visual Studio 2013\Projects\controlpoliciaco\SistemadeControlPoliciaco\obj\Debug\SistemadeControlPoliciaco.pdb
+C:\Users\vicogh\Documents\Visual Studio 2013\Projects\controlpoliciaco\SistemadeControlPoliciaco\obj\Debug\SistemadeControlPoliciaco.csprojResolveAssemblyReference.cache

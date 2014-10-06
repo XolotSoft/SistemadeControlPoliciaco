@@ -45,5 +45,14 @@ namespace SistemadeControlPoliciaco
         {
             Application.Exit();
         }
+
+        private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            calculadora calc = new calculadora();
+            calc.Show(); 
+           
+        }
+
+       
     }
 }
