@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SistemadeControlPoliciaco
 {
-    public partial class UserMDI : Form
+    public partial class Editar : Form
     {
-        public UserMDI()
+        public Editar()
         {
             InitializeComponent();
         }

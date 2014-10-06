@@ -59,6 +59,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\EditarAspirantes\Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EditarAspirantes\Editar.Designer.cs">
+      <DependentUpon>Editar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\MDIs\AdminMDI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +127,9 @@
     <Compile Include="Formularios\MDIs\UserMDI.Designer.cs">
       <DependentUpon>UserMDI.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Formularios\EditarAspirantes\Editar.resx">
+      <DependentUpon>Editar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\MDIs\AdminMDI.resx">
       <DependentUpon>AdminMDI.cs</DependentUpon>
     </EmbeddedResource>
@@ -236,9 +245,7 @@
   <ItemGroup>
     <None Include="Resources\Alpha Dista Icon 31.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Formularios\EditarAspirantes\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -105,5 +105,3 @@ C:\Users\StarKiller\Documents\Visual Studio 2013\Projects\SistemadeControlPolici
 C:\Users\StarKiller\Documents\Visual Studio 2013\Projects\SistemadeControlPoliciaco\SistemadeControlPoliciaco\obj\Debug\SistemadeControlPoliciaco.SplashScreen.resources
 C:\Users\StarKiller\Documents\Visual Studio 2013\Projects\SistemadeControlPoliciaco\SistemadeControlPoliciaco\obj\Debug\SistemadeControlPoliciaco.Properties.Resources.resources
 C:\Users\StarKiller\Documents\Visual Studio 2013\Projects\SistemadeControlPoliciaco\SistemadeControlPoliciaco\obj\Debug\SistemadeControlPoliciaco.csproj.GenerateResource.Cache
-C:\Users\StarKiller\Documents\Visual Studio 2013\Projects\SistemadeControlPoliciaco\SistemadeControlPoliciaco\obj\Debug\SistemadeControlPoliciaco.Editar.resources
-C:\Users\StarKiller\Documents\Visual Studio 2013\Projects\SistemadeControlPoliciaco\SistemadeControlPoliciaco\obj\Debug\SistemadeControlPoliciaco.UserMDI.resources
