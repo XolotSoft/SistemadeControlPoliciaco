@@ -116,7 +116,7 @@ namespace SistemadeControlPoliciaco
         {
             ManejoBD bd = new ManejoBD();
             bd.buscarg("*","estados");
-            cbxEntFed.Items.Add("");
+            cbxEntFed.Items.Insert(0,"");
             cbxEntFed.DataSource = bd.ds.Tables[0].DefaultView;
             cbxEntFed.DisplayMember = "noEst";
             cbxEntFed.ValueMember = "clEst";

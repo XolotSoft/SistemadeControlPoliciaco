@@ -42,5 +42,13 @@ namespace SistemadeControlPoliciaco
         {
             Application.Exit();
         }
+
+        private void editarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Editar edi = null;
+            edi = Editar.Instancia();
+            edi.MdiParent = this;
+            edi.Show();
+        }
     }
 }

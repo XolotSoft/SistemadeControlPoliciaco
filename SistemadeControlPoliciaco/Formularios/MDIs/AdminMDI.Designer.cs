@@ -153,6 +153,7 @@
             | System.Windows.Forms.Keys.A)));
             this.editarToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.editarToolStripMenuItem.Text = "Editar";
+            this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
             // 
             // eliminarToolStripMenuItem
             // 
