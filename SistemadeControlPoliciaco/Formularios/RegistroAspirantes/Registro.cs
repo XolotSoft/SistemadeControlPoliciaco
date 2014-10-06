@@ -68,23 +68,33 @@ namespace SistemadeControlPoliciaco
 
         private void txbApePat_Leave(object sender, EventArgs e)
         {
-            aPat = txbApePat.Text.Substring(0, 2).ToUpper();
-            txbRfcAut.Text = aPat+aMat+nAsp+fNac;
-            txbCurAut.Text = aPat + aMat + nAsp + fNac + sAsp;
+            if (txbApePat.Text != "")
+            {
+                aPat = txbApePat.Text.Substring(0, 2).ToUpper();
+                txbRfcAut.Text = aPat + aMat + nAsp + fNac;
+                txbCurAut.Text = aPat + aMat + nAsp + fNac + sAsp;
+            }
+            
         }
 
         private void txbApeMat_Leave(object sender, EventArgs e)
         {
-            aMat = txbApeMat.Text.Substring(0, 1).ToUpper();
-            txbRfcAut.Text = aPat + aMat + nAsp + fNac;
-            txbCurAut.Text = aPat + aMat + nAsp + fNac + sAsp;
+            if (txbApeMat.Text != "")
+            {
+                aMat = txbApeMat.Text.Substring(0, 1).ToUpper();
+                txbRfcAut.Text = aPat + aMat + nAsp + fNac;
+                txbCurAut.Text = aPat + aMat + nAsp + fNac + sAsp;
+            }           
         }
 
         private void txbNom_Leave(object sender, EventArgs e)
         {
-            nAsp = txbNom.Text.Substring(0, 1).ToUpper();
-            txbRfcAut.Text = aPat + aMat + nAsp + fNac;
-            txbCurAut.Text = aPat + aMat + nAsp + fNac + sAsp;
+            if (txbNom.Text != "")
+            {
+                nAsp = txbNom.Text.Substring(0, 1).ToUpper();
+                txbRfcAut.Text = aPat + aMat + nAsp + fNac;
+                txbCurAut.Text = aPat + aMat + nAsp + fNac + sAsp;
+            }
         }
 
         private void dtpFecNac_Leave(object sender, EventArgs e)
@@ -106,6 +116,7 @@ namespace SistemadeControlPoliciaco
         {
             ManejoBD bd = new ManejoBD();
             bd.buscarg("*","estados");
+            cbxEntFed.Items.Add("");
             cbxEntFed.DataSource = bd.ds.Tables[0].DefaultView;
             cbxEntFed.DisplayMember = "noEst";
             cbxEntFed.ValueMember = "clEst";

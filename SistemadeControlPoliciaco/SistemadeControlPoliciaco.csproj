@@ -230,6 +230,21 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alpha Dista Icon 20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alpha Dista Icon 18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alpha Dista Icon 36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alpha Dista Icon 35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alpha Dista Icon 31.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
