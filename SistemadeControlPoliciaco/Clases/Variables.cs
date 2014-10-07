@@ -35,5 +35,14 @@ namespace SistemadeControlPoliciaco
             nueAsp = ne;
             nuiAsp = ni;
         }
+
+        public static void Contacto(string cn, string pt, string tl, string cl, string em)
+        {
+            conAsp = cn;
+            pueAsp = pt;
+            telAsp = tl;
+            celAsp = cl;
+            emaAsp = em;
+        }
     }
 }

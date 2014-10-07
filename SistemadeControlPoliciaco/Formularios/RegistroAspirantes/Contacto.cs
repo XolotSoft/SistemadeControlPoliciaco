@@ -28,44 +28,51 @@ namespace SistemadeControlPoliciaco
             return frmInst;
         }
 
-        private void Contacto_Load(object sender, EventArgs e)
+        private void btnCerrar_Click(object sender, EventArgs e)
         {
-
+            Limpiar.txb(this);
+            Limpiar.cmb(this);
+            this.Hide();
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        private void btnLimpiar_Click(object sender, EventArgs e)
         {
-
+            Limpiar.txb(this);
+            Limpiar.cmb(this);
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void btnContinuar_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
+            if (Vacio.txb(this))
+            {
+                if (Vacio.cmb(this))
+                {
+                    string cn = txbCon.Text;
+                    string pt = cmbPue.Text;
+                    string tl = txbTel.Text;
+                    string cl = txbCel.Text;
+                    string em = txbMail.Text;
+                    Variables.Contacto(cn, pt, tl, cl, em);
+                    Limpiar.txb(this);
+                    Limpiar.cmb(this);
+                    this.Hide();
+                    Foto fot = null;
+                    fot = Foto.Instancia();
+                    fot.MdiParent = AdminMDI.ActiveForm;
+                    fot.MdiParent = UserMDI.ActiveForm;
+                    fot.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Debes de Seleccionar una opcion", "Error",
+                  MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Debes de llenar todos los campos", "Error",
+                  MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
