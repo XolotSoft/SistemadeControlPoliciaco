@@ -77,7 +77,7 @@
             // 
             // cerrarSesiónToolStripMenuItem
             // 
-            this.cerrarSesiónToolStripMenuItem.Image = global::SistemadeControlPoliciaco.Properties.Resources.Alpha_Dista_Icon_18;
+            this.cerrarSesiónToolStripMenuItem.Image = global::SistemadeControlPoliciaco.Properties.Resources.cerrar_sesion;
             this.cerrarSesiónToolStripMenuItem.Name = "cerrarSesiónToolStripMenuItem";
             this.cerrarSesiónToolStripMenuItem.ShortcutKeyDisplayString = "";
             this.cerrarSesiónToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
@@ -87,7 +87,7 @@
             // 
             // salirToolStripMenuItem
             // 
-            this.salirToolStripMenuItem.Image = global::SistemadeControlPoliciaco.Properties.Resources.Alpha_Dista_Icon_20;
+            this.salirToolStripMenuItem.Image = global::SistemadeControlPoliciaco.Properties.Resources.cerrar;
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
@@ -108,19 +108,19 @@
             // 
             this.nuevoToolStripMenuItem1.Name = "nuevoToolStripMenuItem1";
             this.nuevoToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.U)));
-            this.nuevoToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.nuevoToolStripMenuItem1.Size = new System.Drawing.Size(151, 22);
             this.nuevoToolStripMenuItem1.Text = "Nuevo";
             // 
             // editarToolStripMenuItem1
             // 
             this.editarToolStripMenuItem1.Name = "editarToolStripMenuItem1";
-            this.editarToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.editarToolStripMenuItem1.Size = new System.Drawing.Size(151, 22);
             this.editarToolStripMenuItem1.Text = "Editar";
             // 
             // eliminarToolStripMenuItem1
             // 
             this.eliminarToolStripMenuItem1.Name = "eliminarToolStripMenuItem1";
-            this.eliminarToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.eliminarToolStripMenuItem1.Size = new System.Drawing.Size(151, 22);
             this.eliminarToolStripMenuItem1.Text = "Eliminar";
             // 
             // aspirantesToolStripMenuItem
@@ -137,7 +137,7 @@
             // 
             // nuevoToolStripMenuItem
             // 
-            this.nuevoToolStripMenuItem.Image = global::SistemadeControlPoliciaco.Properties.Resources.Alpha_Dista_Icon_36;
+            this.nuevoToolStripMenuItem.Image = global::SistemadeControlPoliciaco.Properties.Resources.agregar;
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
             this.nuevoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
             this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
@@ -146,7 +146,7 @@
             // 
             // editarToolStripMenuItem
             // 
-            this.editarToolStripMenuItem.Image = global::SistemadeControlPoliciaco.Properties.Resources.Alpha_Dista_Icon_35;
+            this.editarToolStripMenuItem.Image = global::SistemadeControlPoliciaco.Properties.Resources.editar;
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
             this.editarToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl+Shift+A";
             this.editarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
@@ -156,7 +156,7 @@
             // 
             // eliminarToolStripMenuItem
             // 
-            this.eliminarToolStripMenuItem.Image = global::SistemadeControlPoliciaco.Properties.Resources.Alpha_Dista_Icon_31;
+            this.eliminarToolStripMenuItem.Image = global::SistemadeControlPoliciaco.Properties.Resources.eliminar__2_;
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
             this.eliminarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
             | System.Windows.Forms.Keys.A)));
@@ -180,12 +180,14 @@
             // 
             // abrirToolStripMenuItem
             // 
+            this.abrirToolStripMenuItem.Image = global::SistemadeControlPoliciaco.Properties.Resources.Calculadora;
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
             this.abrirToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.abrirToolStripMenuItem.Text = "Calculadora";
             // 
             // notasToolStripMenuItem
             // 
+            this.notasToolStripMenuItem.Image = global::SistemadeControlPoliciaco.Properties.Resources.Notapng;
             this.notasToolStripMenuItem.Name = "notasToolStripMenuItem";
             this.notasToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.notasToolStripMenuItem.Text = "Notas";

@@ -1,0 +1,7 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/SistemadeControlPoliciaco/obj/Debug/SistemadeControlPoliciaco.UserMDI.resources
+/SistemadeControlPoliciaco/bin/Debug/SistemadeControlPoliciaco.vshost.exe.manifest
+/SistemadeControlPoliciaco/obj/Debug/SistemadeControlPoliciaco.Editar.resources

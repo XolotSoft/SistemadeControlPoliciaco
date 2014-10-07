@@ -16,5 +16,10 @@ namespace SistemadeControlPoliciaco
         {
             InitializeComponent();
         }
+
+        private void UserMDI_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

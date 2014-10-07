@@ -10,27 +10,32 @@ using System.Windows.Forms;
 
 namespace SistemadeControlPoliciaco
 {
-    public partial class Escaneo : Form
+    public partial class EditarUsuario : Form
     {
-        public Escaneo()
+        public EditarUsuario()
         {
             InitializeComponent();
         }
-        private static Escaneo frmInst = null;
+        private static EditarUsuario frmInst = null;
 
-        public static Escaneo Instancia()
+        public static EditarUsuario Instancia()
         {
             if (((frmInst == null) || (frmInst.IsDisposed == true)))
             {
-                frmInst = new Escaneo();
+                frmInst = new EditarUsuario();
             }
             frmInst.BringToFront();
             return frmInst;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnCambiar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

@@ -108,8 +108,11 @@ namespace SistemadeControlPoliciaco
 
         private void cbxSex_Leave(object sender, EventArgs e)
         {
-            sAsp = cbxSex.Text.Substring(0, 1).ToUpper();
-            txbCurAut.Text = aPat + aMat + nAsp + fNac + sAsp;
+            if (cbxSex.SelectedIndex != 0)
+            {
+                sAsp = cbxSex.Text.Substring(0, 1).ToUpper();
+                txbCurAut.Text = aPat + aMat + nAsp + fNac + sAsp;
+            }
         }
 
         private void Registro_Load(object sender, EventArgs e)

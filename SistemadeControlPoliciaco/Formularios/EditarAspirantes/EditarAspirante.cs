@@ -10,27 +10,27 @@ using System.Windows.Forms;
 
 namespace SistemadeControlPoliciaco
 {
-    public partial class Escaneo : Form
+    public partial class EditarAspirante : Form
     {
-        public Escaneo()
+        public EditarAspirante()
         {
             InitializeComponent();
         }
-        private static Escaneo frmInst = null;
+        private static EditarAspirante frmInst = null;
 
-        public static Escaneo Instancia()
+        public static EditarAspirante Instancia()
         {
             if (((frmInst == null) || (frmInst.IsDisposed == true)))
             {
-                frmInst = new Escaneo();
+                frmInst = new EditarAspirante();
             }
             frmInst.BringToFront();
             return frmInst;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnCer_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

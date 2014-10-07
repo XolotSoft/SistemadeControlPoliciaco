@@ -55,5 +55,10 @@ namespace SistemadeControlPoliciaco
                 cbxDelMun.DisplayMember = "noDel";
             }
         }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
