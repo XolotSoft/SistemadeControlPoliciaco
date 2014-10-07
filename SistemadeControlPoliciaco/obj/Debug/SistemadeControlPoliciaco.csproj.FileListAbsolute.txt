@@ -17,8 +17,6 @@ C:\Users\Teenagedream\Documents\Visual Studio 2013\Projects\controlpolicial\Sist
 C:\Users\Teenagedream\Documents\Visual Studio 2013\Projects\SistemedeControlPoliciaco\SistemadeControlPoliciaco\bin\Debug\SistemadeControlPoliciaco.exe.config
 C:\Users\Teenagedream\Documents\Visual Studio 2013\Projects\SistemedeControlPoliciaco\SistemadeControlPoliciaco\obj\Debug\SistemadeControlPoliciaco.exe
 C:\Users\Teenagedream\Documents\Visual Studio 2013\Projects\SistemedeControlPoliciaco\SistemadeControlPoliciaco\obj\Debug\SistemadeControlPoliciaco.pdb
-E:\Documentos\Visual Studio 2013\Projects\SistemadeControlPoliciaco\SistemadeControlPoliciaco\bin\Debug\bdSCP.mdf
-E:\Documentos\Visual Studio 2013\Projects\SistemadeControlPoliciaco\SistemadeControlPoliciaco\bin\Debug\bdSCP_log.ldf
 E:\Documentos\Visual Studio 2013\Projects\SistemadeControlPoliciaco\SistemadeControlPoliciaco\bin\Debug\SistemadeControlPoliciaco.exe.config
 E:\Documentos\Visual Studio 2013\Projects\SistemadeControlPoliciaco\SistemadeControlPoliciaco\bin\Debug\SistemadeControlPoliciaco.exe
 E:\Documentos\Visual Studio 2013\Projects\SistemadeControlPoliciaco\SistemadeControlPoliciaco\bin\Debug\SistemadeControlPoliciaco.pdb
@@ -109,3 +107,9 @@ C:\Users\StarKiller\Documents\Visual Studio 2013\Projects\SistemadeControlPolici
 C:\Users\StarKiller\Documents\Visual Studio 2013\Projects\SistemadeControlPoliciaco\SistemadeControlPoliciaco\obj\Debug\SistemadeControlPoliciaco.EditarUsuario.resources
 C:\Users\StarKiller\Documents\Visual Studio 2013\Projects\SistemadeControlPoliciaco\SistemadeControlPoliciaco\obj\Debug\SistemadeControlPoliciaco.EliminarUsuario.resources
 C:\Users\StarKiller\Documents\Visual Studio 2013\Projects\SistemadeControlPoliciaco\SistemadeControlPoliciaco\obj\Debug\SistemadeControlPoliciaco.NuevoUsuario.resources
+e:\documentos\visual studio 2013\Projects\SistemadeControlPoliciaco\SistemadeControlPoliciaco\obj\Debug\SistemadeControlPoliciaco.EditarDatPerAsp.resources
+e:\documentos\visual studio 2013\Projects\SistemadeControlPoliciaco\SistemadeControlPoliciaco\obj\Debug\SistemadeControlPoliciaco.EditarAspirante.resources
+e:\documentos\visual studio 2013\Projects\SistemadeControlPoliciaco\SistemadeControlPoliciaco\obj\Debug\SistemadeControlPoliciaco.EditarUsuario.resources
+e:\documentos\visual studio 2013\Projects\SistemadeControlPoliciaco\SistemadeControlPoliciaco\obj\Debug\SistemadeControlPoliciaco.EliminarUsuario.resources
+e:\documentos\visual studio 2013\Projects\SistemadeControlPoliciaco\SistemadeControlPoliciaco\obj\Debug\SistemadeControlPoliciaco.NuevoUsuario.resources
+e:\documentos\visual studio 2013\Projects\SistemadeControlPoliciaco\SistemadeControlPoliciaco\obj\Debug\SistemadeControlPoliciaco.UserMDI.resources

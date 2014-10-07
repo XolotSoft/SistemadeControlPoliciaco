@@ -50,6 +50,8 @@
             this.btnLim = new System.Windows.Forms.Button();
             this.btnCer = new System.Windows.Forms.Button();
             this.btnCon = new System.Windows.Forms.Button();
+            this.cmbEdoCivil = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -101,7 +103,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(399, 213);
+            this.label5.Location = new System.Drawing.Point(411, 201);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(125, 16);
             this.label5.TabIndex = 4;
@@ -123,7 +125,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(487, 274);
+            this.label7.Location = new System.Drawing.Point(486, 247);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 16);
             this.label7.TabIndex = 6;
@@ -134,7 +136,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(497, 335);
+            this.label8.Location = new System.Drawing.Point(497, 291);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(38, 16);
             this.label8.TabIndex = 7;
@@ -145,9 +147,11 @@
             this.txbApePat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbApePat.Location = new System.Drawing.Point(200, 152);
             this.txbApePat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txbApePat.MaxLength = 20;
             this.txbApePat.Name = "txbApePat";
             this.txbApePat.Size = new System.Drawing.Size(170, 22);
             this.txbApePat.TabIndex = 8;
+            this.txbApePat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbApePat_KeyPress);
             this.txbApePat.Leave += new System.EventHandler(this.txbApePat_Leave);
             // 
             // txbApeMat
@@ -155,9 +159,11 @@
             this.txbApeMat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbApeMat.Location = new System.Drawing.Point(200, 212);
             this.txbApeMat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txbApeMat.MaxLength = 20;
             this.txbApeMat.Name = "txbApeMat";
             this.txbApeMat.Size = new System.Drawing.Size(170, 22);
             this.txbApeMat.TabIndex = 9;
+            this.txbApeMat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbApeMat_KeyPress);
             this.txbApeMat.Leave += new System.EventHandler(this.txbApeMat_Leave);
             // 
             // txbNom
@@ -165,16 +171,18 @@
             this.txbNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbNom.Location = new System.Drawing.Point(200, 272);
             this.txbNom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txbNom.MaxLength = 30;
             this.txbNom.Name = "txbNom";
             this.txbNom.Size = new System.Drawing.Size(170, 22);
             this.txbNom.TabIndex = 10;
+            this.txbNom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbNom_KeyPress);
             this.txbNom.Leave += new System.EventHandler(this.txbNom_Leave);
             // 
             // cbxEntFed
             // 
             this.cbxEntFed.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxEntFed.FormattingEnabled = true;
-            this.cbxEntFed.Location = new System.Drawing.Point(540, 210);
+            this.cbxEntFed.Location = new System.Drawing.Point(540, 198);
             this.cbxEntFed.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbxEntFed.Name = "cbxEntFed";
             this.cbxEntFed.Size = new System.Drawing.Size(170, 24);
@@ -200,7 +208,7 @@
             // 
             this.txbCurAut.Enabled = false;
             this.txbCurAut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbCurAut.Location = new System.Drawing.Point(540, 272);
+            this.txbCurAut.Location = new System.Drawing.Point(539, 245);
             this.txbCurAut.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txbCurAut.Name = "txbCurAut";
             this.txbCurAut.Size = new System.Drawing.Size(131, 22);
@@ -209,17 +217,19 @@
             // txbCurHom
             // 
             this.txbCurHom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbCurHom.Location = new System.Drawing.Point(677, 272);
+            this.txbCurHom.Location = new System.Drawing.Point(676, 245);
             this.txbCurHom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txbCurHom.MaxLength = 3;
             this.txbCurHom.Name = "txbCurHom";
             this.txbCurHom.Size = new System.Drawing.Size(35, 22);
             this.txbCurHom.TabIndex = 14;
+            this.txbCurHom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbCurHom_KeyPress);
             // 
             // txbRfcAut
             // 
             this.txbRfcAut.Enabled = false;
             this.txbRfcAut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbRfcAut.Location = new System.Drawing.Point(540, 332);
+            this.txbRfcAut.Location = new System.Drawing.Point(540, 288);
             this.txbRfcAut.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txbRfcAut.Name = "txbRfcAut";
             this.txbRfcAut.Size = new System.Drawing.Size(130, 22);
@@ -228,11 +238,13 @@
             // txbRfcHom
             // 
             this.txbRfcHom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbRfcHom.Location = new System.Drawing.Point(677, 332);
+            this.txbRfcHom.Location = new System.Drawing.Point(677, 288);
             this.txbRfcHom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txbRfcHom.MaxLength = 3;
             this.txbRfcHom.Name = "txbRfcHom";
             this.txbRfcHom.Size = new System.Drawing.Size(35, 22);
             this.txbRfcHom.TabIndex = 15;
+            this.txbRfcHom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbRfcHom_KeyPress);
             // 
             // dtpFecNac
             // 
@@ -289,12 +301,39 @@
             this.btnCon.UseVisualStyleBackColor = true;
             this.btnCon.Click += new System.EventHandler(this.btnCon_Click);
             // 
+            // cmbEdoCivil
+            // 
+            this.cmbEdoCivil.FormattingEnabled = true;
+            this.cmbEdoCivil.Items.AddRange(new object[] {
+            "",
+            "Soltero",
+            "Casado"});
+            this.cmbEdoCivil.Location = new System.Drawing.Point(540, 333);
+            this.cmbEdoCivil.Name = "cmbEdoCivil";
+            this.cmbEdoCivil.Size = new System.Drawing.Size(170, 21);
+            this.cmbEdoCivil.TabIndex = 19;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(469, 334);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(67, 16);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Edo. Civil:";
+            // 
             // Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::SistemadeControlPoliciaco.Properties.Resources.Datosper;
             this.ClientSize = new System.Drawing.Size(800, 500);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.cmbEdoCivil);
             this.Controls.Add(this.btnLim);
             this.Controls.Add(this.btnCer);
             this.Controls.Add(this.btnCon);
@@ -352,5 +391,7 @@
         private System.Windows.Forms.Button btnLim;
         private System.Windows.Forms.Button btnCer;
         private System.Windows.Forms.Button btnCon;
+        private System.Windows.Forms.ComboBox cmbEdoCivil;
+        private System.Windows.Forms.Label label9;
     }
 }

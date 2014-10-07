@@ -14,19 +14,15 @@ namespace SistemadeControlPoliciaco
     {
         public Registro()
         {
-            InitializeComponent();
-            
-            
+            InitializeComponent();    
         }
-        private static Registro frmInst = null;
         string aPat = "";
         string aMat = "";
         string nAsp = "";
         string fNac = "";
         string eFed = "";
         string sAsp = "";
-        string cAsp = "";
-        string rAsp = "";
+        private static Registro frmInst = null;
 
         public static Registro Instancia()
         {
@@ -40,30 +36,69 @@ namespace SistemadeControlPoliciaco
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
+            Limpiar.txb(this);
+            dtpFecNac.ResetText();
+            Limpiar.cmb(this);
+            aPat = "";
+            aMat = "";
+            nAsp = "";
+            fNac = "";
+            eFed = "";
+            sAsp = "";
             this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Limpiar.txb(this);
+            dtpFecNac.ResetText();
+            Limpiar.cmb(this);
+            aPat = "";
+            aMat = "";
+            nAsp = "";
+            fNac = "";
+            eFed = "";
+            sAsp = "";
         }
 
         private void btnCon_Click(object sender, EventArgs e)
         {
-            string aPat = txbApePat.Text;
-            string aMat = txbApeMat.Text;
-            string nAsp = txbNom.Text;
-            string fNac = dtpFecNac.Text;
-            string eFed = cbxEntFed.Text;
-            string sAsp = cbxSex.Text;
-            string cAsp = txbCurAut.Text + txbCurHom.Text;
-            string rAsp = txbRfcAut.Text + txbRfcHom.Text;
-            Variables.DatosPersonales(aPat, aMat, nAsp, fNac, eFed, sAsp, cAsp, rAsp);
-            this.Hide();
-            Domicilio dom = null;
-            dom = Domicilio.Instancia();
-            dom.MdiParent = AdminMDI.ActiveForm;
-            dom.Show();
+            if(Vacio.txb(this))
+            {
+                if(Vacio.cmb(this))
+                {
+                    string aPat = txbApePat.Text;
+                    string aMat = txbApeMat.Text;
+                    string nAsp = txbNom.Text;
+                    string fNac = dtpFecNac.Text;
+                    string eFed = cbxEntFed.Text;
+                    string sAsp = cbxSex.Text;
+                    string dAsp = txbCurAut.Text + txbCurHom.Text;
+                    string rAsp = txbRfcAut.Text + txbRfcHom.Text;
+                    string ecAsp = cmbEdoCivil.Text;
+                    Variables.DatosPersonales(aPat, aMat, nAsp, fNac, eFed, sAsp, dAsp, rAsp, ecAsp);
+                    Limpiar.txb(this);
+                    dtpFecNac.ResetText();
+                    Limpiar.cmb(this);
+                    this.Hide();
+                    Domicilio dom = null;
+                    dom = Domicilio.Instancia();
+                    dom.MdiParent = AdminMDI.ActiveForm;
+                    dom.MdiParent = UserMDI.ActiveForm;
+                    dom.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Debes de Seleccionar una opcion", "Error",
+                   MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Debes de llenar todos los campos", "Error",
+                  MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         private void txbApePat_Leave(object sender, EventArgs e)
@@ -115,21 +150,50 @@ namespace SistemadeControlPoliciaco
             }
         }
 
+        private void cbxEntFed_Leave(object sender, EventArgs e)
+        {
+            if (cbxSex.SelectedIndex != 0)
+            {
+                eFed = cbxEntFed.SelectedValue.ToString();
+                txbCurAut.Text = aPat + aMat + nAsp + fNac + sAsp + eFed;
+            } 
+        }
+
         private void Registro_Load(object sender, EventArgs e)
         {
             ManejoBD bd = new ManejoBD();
             bd.buscarg("*","estados");
-            cbxEntFed.Items.Add("");
             cbxEntFed.DataSource = bd.ds.Tables[0].DefaultView;
             cbxEntFed.DisplayMember = "noEst";
             cbxEntFed.ValueMember = "clEst";
+            Limpiar.txb(this);
+            dtpFecNac.ResetText();
+            Limpiar.cmb(this);
         }
 
-        private void cbxEntFed_Leave(object sender, EventArgs e)
+        private void txbApePat_KeyPress(object sender, KeyPressEventArgs e)
         {
-            eFed = cbxEntFed.SelectedValue.ToString();
-            txbCurAut.Text = aPat + aMat + nAsp + fNac + sAsp + eFed;
+            Validar.letrasyesp(e);
+        }
 
+        private void txbApeMat_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validar.letrasyesp(e);
+        }
+
+        private void txbNom_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validar.letrasyesp(e);
+        }
+
+        private void txbCurHom_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validar.letynum(e);
+        }
+
+        private void txbRfcHom_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validar.letynum(e);
         }
     }
 }

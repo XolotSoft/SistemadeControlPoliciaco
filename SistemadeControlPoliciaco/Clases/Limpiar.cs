@@ -18,6 +18,16 @@ namespace SistemadeControlPoliciaco
                     ctrl.Text = "";
                 }
             }
-        }       
+        }
+        public static void cmb(Form frm)
+        {
+            foreach (Control ctrl in frm.Controls)
+            {
+                if (ctrl is ComboBox)
+                {
+                    ctrl.ResetText();
+                }
+            }
+        }     
     }
 }
