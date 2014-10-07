@@ -38,11 +38,11 @@
             this.label7 = new System.Windows.Forms.Label();
             this.cbxEntFed = new System.Windows.Forms.ComboBox();
             this.cbxDelMun = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txbCol = new System.Windows.Forms.TextBox();
+            this.txbCodPos = new System.Windows.Forms.TextBox();
+            this.txbCalle = new System.Windows.Forms.TextBox();
+            this.txbNumExt = new System.Windows.Forms.TextBox();
+            this.txbNumInt = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
@@ -159,45 +159,50 @@
             this.cbxDelMun.Size = new System.Drawing.Size(170, 24);
             this.cbxDelMun.TabIndex = 8;
             // 
-            // textBox1
+            // txbCol
             // 
-            this.textBox1.Location = new System.Drawing.Point(200, 273);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(170, 22);
-            this.textBox1.TabIndex = 9;
+            this.txbCol.Location = new System.Drawing.Point(200, 273);
+            this.txbCol.Margin = new System.Windows.Forms.Padding(4);
+            this.txbCol.Name = "txbCol";
+            this.txbCol.Size = new System.Drawing.Size(170, 22);
+            this.txbCol.TabIndex = 9;
+            this.txbCol.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbCol_KeyPress);
             // 
-            // textBox2
+            // txbCodPos
             // 
-            this.textBox2.Location = new System.Drawing.Point(200, 333);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(170, 22);
-            this.textBox2.TabIndex = 10;
+            this.txbCodPos.Location = new System.Drawing.Point(200, 333);
+            this.txbCodPos.Margin = new System.Windows.Forms.Padding(4);
+            this.txbCodPos.Name = "txbCodPos";
+            this.txbCodPos.Size = new System.Drawing.Size(170, 22);
+            this.txbCodPos.TabIndex = 10;
+            this.txbCodPos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbCodPos_KeyPress);
             // 
-            // textBox3
+            // txbCalle
             // 
-            this.textBox3.Location = new System.Drawing.Point(540, 152);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(170, 22);
-            this.textBox3.TabIndex = 11;
+            this.txbCalle.Location = new System.Drawing.Point(540, 152);
+            this.txbCalle.Margin = new System.Windows.Forms.Padding(4);
+            this.txbCalle.Name = "txbCalle";
+            this.txbCalle.Size = new System.Drawing.Size(170, 22);
+            this.txbCalle.TabIndex = 11;
+            this.txbCalle.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbCalle_KeyPress);
             // 
-            // textBox4
+            // txbNumExt
             // 
-            this.textBox4.Location = new System.Drawing.Point(540, 212);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(75, 22);
-            this.textBox4.TabIndex = 12;
+            this.txbNumExt.Location = new System.Drawing.Point(540, 212);
+            this.txbNumExt.Margin = new System.Windows.Forms.Padding(4);
+            this.txbNumExt.Name = "txbNumExt";
+            this.txbNumExt.Size = new System.Drawing.Size(75, 22);
+            this.txbNumExt.TabIndex = 12;
+            this.txbNumExt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbNumExt_KeyPress);
             // 
-            // textBox5
+            // txbNumInt
             // 
-            this.textBox5.Location = new System.Drawing.Point(540, 270);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(75, 22);
-            this.textBox5.TabIndex = 13;
+            this.txbNumInt.Location = new System.Drawing.Point(540, 270);
+            this.txbNumInt.Margin = new System.Windows.Forms.Padding(4);
+            this.txbNumInt.Name = "txbNumInt";
+            this.txbNumInt.Size = new System.Drawing.Size(75, 22);
+            this.txbNumInt.TabIndex = 13;
+            this.txbNumInt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbNumInt_KeyPress);
             // 
             // button1
             // 
@@ -250,11 +255,11 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnRegistrar);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txbNumInt);
+            this.Controls.Add(this.txbNumExt);
+            this.Controls.Add(this.txbCalle);
+            this.Controls.Add(this.txbCodPos);
+            this.Controls.Add(this.txbCol);
             this.Controls.Add(this.cbxDelMun);
             this.Controls.Add(this.cbxEntFed);
             this.Controls.Add(this.label7);
@@ -287,11 +292,11 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cbxEntFed;
         private System.Windows.Forms.ComboBox cbxDelMun;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txbCol;
+        private System.Windows.Forms.TextBox txbCodPos;
+        private System.Windows.Forms.TextBox txbCalle;
+        private System.Windows.Forms.TextBox txbNumExt;
+        private System.Windows.Forms.TextBox txbNumInt;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnRegistrar;

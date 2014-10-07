@@ -31,6 +31,34 @@ namespace SistemadeControlPoliciaco
             }
         }
 
+        public static void letynumesp(KeyPressEventArgs e)
+        {
+            if (Char.IsLetterOrDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                if (Char.IsControl(e.KeyChar))
+                {
+                    e.Handled = false;
+                }
+                else
+                {
+                    if (char.IsWhiteSpace(e.KeyChar))
+                    {
+                        e.Handled = false;
+                    }
+                    else
+                    {
+                        e.Handled = true;
+                        MessageBox.Show("Solo se permiten letras y numeros", "Atención",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+        }
+
         public static void letrasyesp(KeyPressEventArgs e)
         {
             if (Char.IsLetter(e.KeyChar))
@@ -55,6 +83,27 @@ namespace SistemadeControlPoliciaco
                         MessageBox.Show("Solo se permiten letras", "Atención",
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
+                }
+            }
+        }
+
+         public static void letras(KeyPressEventArgs e)
+        {
+            if (Char.IsLetter(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                if (char.IsControl(e.KeyChar))
+                {
+                    e.Handled = false;
+                }
+                else
+                {  
+                    e.Handled = true;
+                    MessageBox.Show("Solo se permiten letras", "Atención",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }

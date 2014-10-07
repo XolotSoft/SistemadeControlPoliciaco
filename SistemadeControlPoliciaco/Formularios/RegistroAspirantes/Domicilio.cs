@@ -30,12 +30,15 @@ namespace SistemadeControlPoliciaco
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
+            Limpiar.txb(this);
+            Limpiar.cmb(this);
             this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Limpiar.txb(this);
+            Limpiar.cmb(this);
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -58,7 +61,63 @@ namespace SistemadeControlPoliciaco
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
+            if (Vacio.txb(this))
+            {
+                if (Vacio.cmb(this))
+                {
+                    string ef = cbxEntFed.Text;
+                    string dm = cbxDelMun.Text;
+                    string cl = txbCol.Text;
+                    string cp = txbCodPos.Text;
+                    string cy = txbCalle.Text;
+                    string ne = txbNumExt.Text;
+                    string ni = txbNumInt.Text;
+                    Variables.Domicilio(ef, dm, cl, cp, cy, ne, ni);
+                    Limpiar.txb(this);
+                    Limpiar.cmb(this);
+                    this.Hide();
+                    Contacto con = null;
+                    con = Contacto.Instancia();
+                    con.MdiParent = AdminMDI.ActiveForm;
+                    con.MdiParent = UserMDI.ActiveForm;
+                    con.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Debes de Seleccionar una opcion", "Error",
+                  MessageBoxButtons.OK, MessageBoxIcon.Error);
+                } 
+            }
+            else
+            {
+                MessageBox.Show("Debes de llenar todos los campos", "Error",
+                  MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
+        private void txbNumExt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validar.num(e);
+        }
+
+        private void txbNumInt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validar.num(e);
+        }
+
+        private void txbCodPos_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validar.num(e);
+        }
+
+        private void txbCalle_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validar.letynumesp(e);
+        }
+
+        private void txbCol_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validar.letynumesp(e);
         }
     }
 }
