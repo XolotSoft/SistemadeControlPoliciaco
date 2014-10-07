@@ -10,25 +10,25 @@ using System.Windows.Forms;
 
 namespace SistemadeControlPoliciaco
 {
-    public partial class Escaneo : Form
+    public partial class EliminarUsuario : Form
     {
-        public Escaneo()
+        public EliminarUsuario()
         {
             InitializeComponent();
         }
-        private static Escaneo frmInst = null;
+        private static EliminarUsuario frmInst = null;
 
-        public static Escaneo Instancia()
+        public static EliminarUsuario Instancia()
         {
             if (((frmInst == null) || (frmInst.IsDisposed == true)))
             {
-                frmInst = new Escaneo();
+                frmInst = new EliminarUsuario();
             }
             frmInst.BringToFront();
             return frmInst;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnEliminar_Click(object sender, EventArgs e)
         {
 
         }

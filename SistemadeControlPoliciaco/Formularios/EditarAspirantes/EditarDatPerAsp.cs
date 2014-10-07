@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SistemadeControlPoliciaco
 {
-    public partial class Editar : Form
+    public partial class EditarDatPerAsp : Form
     {
-        public Editar()
+        public EditarDatPerAsp()
         {
             InitializeComponent();
         }

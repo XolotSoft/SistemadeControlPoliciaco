@@ -59,11 +59,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Formularios\EditarAspirantes\Editar.cs">
+    <Compile Include="Formularios\EditarAspirantes\EditarDatPerAsp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\EditarAspirantes\Editar.Designer.cs">
-      <DependentUpon>Editar.cs</DependentUpon>
+    <Compile Include="Formularios\EditarAspirantes\EditarDatPerAsp.Designer.cs">
+      <DependentUpon>EditarDatPerAsp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\EditarAspirantes\EditarAspirante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EditarAspirantes\EditarAspirante.Designer.cs">
+      <DependentUpon>EditarAspirante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\EditarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\EditarUsuario.Designer.cs">
+      <DependentUpon>EditarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\EliminarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\EliminarUsuario.Designer.cs">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\MDIs\AdminMDI.cs">
       <SubType>Form</SubType>
@@ -117,6 +135,12 @@
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\Program.cs" />
+    <Compile Include="Formularios\Usuarios\NuevoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Usuarios\NuevoUsuario.Designer.cs">
+      <DependentUpon>NuevoUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Clases\Vacio.cs" />
     <Compile Include="Clases\Validar.cs" />
@@ -127,8 +151,11 @@
     <Compile Include="Formularios\MDIs\UserMDI.Designer.cs">
       <DependentUpon>UserMDI.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Formularios\EditarAspirantes\Editar.resx">
-      <DependentUpon>Editar.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\EditarAspirantes\EditarDatPerAsp.resx">
+      <DependentUpon>EditarDatPerAsp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EditarAspirantes\EditarAspirante.resx">
+      <DependentUpon>EditarAspirante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\MDIs\AdminMDI.resx">
       <DependentUpon>AdminMDI.cs</DependentUpon>
@@ -153,6 +180,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Usuarios\EditarUsuario.resx">
+      <DependentUpon>EditarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Usuarios\EliminarUsuario.resx">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Usuarios\NuevoUsuario.resx">
+      <DependentUpon>NuevoUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
