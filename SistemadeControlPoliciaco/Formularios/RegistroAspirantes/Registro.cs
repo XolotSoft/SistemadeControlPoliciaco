@@ -103,33 +103,23 @@ namespace SistemadeControlPoliciaco
 
         private void txbApePat_Leave(object sender, EventArgs e)
         {
-            if (txbApePat.Text != "")
-            {
-                aPat = txbApePat.Text.Substring(0, 2).ToUpper();
-                txbRfcAut.Text = aPat + aMat + nAsp + fNac;
-                txbCurAut.Text = aPat + aMat + nAsp + fNac + sAsp;
-            }
-            
+            aPat = txbApePat.Text.Substring(0, 2).ToUpper();
+            txbRfcAut.Text = aPat+aMat+nAsp+fNac;
+            txbCurAut.Text = aPat + aMat + nAsp + fNac + sAsp;
         }
 
         private void txbApeMat_Leave(object sender, EventArgs e)
         {
-            if (txbApeMat.Text != "")
-            {
-                aMat = txbApeMat.Text.Substring(0, 1).ToUpper();
-                txbRfcAut.Text = aPat + aMat + nAsp + fNac;
-                txbCurAut.Text = aPat + aMat + nAsp + fNac + sAsp;
-            }           
+            aMat = txbApeMat.Text.Substring(0, 1).ToUpper();
+            txbRfcAut.Text = aPat + aMat + nAsp + fNac;
+            txbCurAut.Text = aPat + aMat + nAsp + fNac + sAsp;
         }
 
         private void txbNom_Leave(object sender, EventArgs e)
         {
-            if (txbNom.Text != "")
-            {
-                nAsp = txbNom.Text.Substring(0, 1).ToUpper();
-                txbRfcAut.Text = aPat + aMat + nAsp + fNac;
-                txbCurAut.Text = aPat + aMat + nAsp + fNac + sAsp;
-            }
+            nAsp = txbNom.Text.Substring(0, 1).ToUpper();
+            txbRfcAut.Text = aPat + aMat + nAsp + fNac;
+            txbCurAut.Text = aPat + aMat + nAsp + fNac + sAsp;
         }
 
         private void dtpFecNac_Leave(object sender, EventArgs e)

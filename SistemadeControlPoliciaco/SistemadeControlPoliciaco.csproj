@@ -59,30 +59,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Formularios\EditarAspirantes\EditarDatPerAsp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\EditarAspirantes\EditarDatPerAsp.Designer.cs">
-      <DependentUpon>EditarDatPerAsp.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\EditarAspirantes\EditarAspirante.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\EditarAspirantes\EditarAspirante.Designer.cs">
-      <DependentUpon>EditarAspirante.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Usuarios\EditarUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Usuarios\EditarUsuario.Designer.cs">
-      <DependentUpon>EditarUsuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Usuarios\EliminarUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Usuarios\EliminarUsuario.Designer.cs">
-      <DependentUpon>EliminarUsuario.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\MDIs\AdminMDI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +79,12 @@
     </Compile>
     <Compile Include="Formularios\RegistroAspirantes\Domicilio.Designer.cs">
       <DependentUpon>Domicilio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\EditarAspirantes\Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EditarAspirantes\Editar.Designer.cs">
+      <DependentUpon>Editar.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\RegistroAspirantes\Escaneo.cs">
       <SubType>Form</SubType>
@@ -135,12 +117,6 @@
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\Program.cs" />
-    <Compile Include="Formularios\Usuarios\NuevoUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Usuarios\NuevoUsuario.Designer.cs">
-      <DependentUpon>NuevoUsuario.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Clases\Vacio.cs" />
     <Compile Include="Clases\Validar.cs" />
@@ -151,12 +127,6 @@
     <Compile Include="Formularios\MDIs\UserMDI.Designer.cs">
       <DependentUpon>UserMDI.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Formularios\EditarAspirantes\EditarDatPerAsp.resx">
-      <DependentUpon>EditarDatPerAsp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\EditarAspirantes\EditarAspirante.resx">
-      <DependentUpon>EditarAspirante.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\MDIs\AdminMDI.resx">
       <DependentUpon>AdminMDI.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\RegistroAspirantes\Domicilio.resx">
       <DependentUpon>Domicilio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EditarAspirantes\Editar.resx">
+      <DependentUpon>Editar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\RegistroAspirantes\Escaneo.resx">
       <DependentUpon>Escaneo.cs</DependentUpon>
@@ -181,19 +154,16 @@
     <EmbeddedResource Include="Formularios\SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Usuarios\EditarUsuario.resx">
-      <DependentUpon>EditarUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Usuarios\EliminarUsuario.resx">
-      <DependentUpon>EliminarUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Usuarios\NuevoUsuario.resx">
-      <DependentUpon>NuevoUsuario.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <EmbeddedResource Include="Formularios\MDIs\UserMDI.resx">
       <DependentUpon>UserMDI.cs</DependentUpon>
     </EmbeddedResource>
@@ -217,11 +187,11 @@
     <None Include="Resources\modaspirantes.png" />
     <None Include="Resources\huella1.jpg" />
     <None Include="Resources\logomdi.png" />
-    <None Include="Resources\Notapng" />
     <None Include="Resources\policia.jpg" />
     <None Include="Resources\captura.png" />
     <None Include="Resources\webcam.png" />
     <None Include="Resources\deleteDates.png" />
+    <None Include="Resources\Camara.png" />
     <None Include="Resources\1401844351_plus-24.png" />
     <None Include="Resources\1401844351_menos-24.png" />
     <None Include="Resources\1401844327_checkmark-24.png" />
@@ -259,45 +229,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Alpha Dista Icon 20.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Alpha Dista Icon 18.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Alpha Dista Icon 36.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Alpha Dista Icon 35.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Alpha Dista Icon 31.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Calculadora.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\agregar %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\agregar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\editar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eliminar %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cerrar sesion.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cerrar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\camara1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

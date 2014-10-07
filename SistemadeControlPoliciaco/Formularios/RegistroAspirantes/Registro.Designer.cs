@@ -187,6 +187,7 @@
             this.cbxEntFed.Name = "cbxEntFed";
             this.cbxEntFed.Size = new System.Drawing.Size(170, 24);
             this.cbxEntFed.TabIndex = 13;
+            this.cbxEntFed.SelectedIndexChanged += new System.EventHandler(this.cbxEntFed_SelectedIndexChanged);
             this.cbxEntFed.Leave += new System.EventHandler(this.cbxEntFed_Leave);
             // 
             // cbxSex
